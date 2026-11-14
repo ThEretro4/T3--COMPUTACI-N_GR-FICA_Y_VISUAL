@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operación Extracción - FPS 3D</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="hud">
+    <div class="topline"><span>OPERACIÓN EXTRACCIÓN</span><span id="objective">OBJETIVO: ESCAPA DEL HOSPITAL · HELIPUERTO</span></div>
+    <div id="crosshair">+</div>
+    <div id="weaponHud">
+      <div id="weaponName">PISTOLA</div>
+      <div id="ammo">8 / ∞</div>
+    </div>
+    <div id="help">WASD: mover · Mouse: mirar · Clic: disparar · 1/2: cambiar arma</div>
+    <div id="toast"></div>
+  </div>
+  <div id="screen">
+    <div class="panel">
+      <h1 id="screenTitle">OPERACIÓN EXTRACCIÓN</h1>
+      <p id="screenText">El hospital fue invadido por zombis. Cruza Recepción, Urgencias, Habitaciones y Quirófano hasta el helipuerto de extracción.</p>
+      <p class="instructions">WASD para moverte · Mouse para mirar · Clic izquierdo para disparar · 1 y 2 para cambiar arma</p>
+      <button id="startButton">INICIAR MISIÓN</button>
+    </div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
